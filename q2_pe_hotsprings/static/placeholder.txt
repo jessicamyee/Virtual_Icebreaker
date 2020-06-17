@@ -1,0 +1,1 @@
+This file ensures that q2_pe_hotsprings/static/ will be added to the project. Django will collect static files and place them in q2_pe_hotsprings/static/. 
