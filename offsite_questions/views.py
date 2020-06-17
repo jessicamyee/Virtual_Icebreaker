@@ -25,11 +25,8 @@ def index(request):
     # POST request, the user has submitted something via the form
     else:
         data = request.POST
-        print(data)
         output = data['question_number']
-        print(output)
         get_question = question_list[int(output)]
-        print(get_question)
         context = {'question': get_question}
 
     return render(request, 'q2_hotsprings_temps/index.html', context)
