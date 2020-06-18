@@ -33,7 +33,7 @@ def index(request):
         21: "If you could choose a  company that we share the office space with, which company would it be?",
         22: "What's one thing you believed as a kid but is not real?",
         23: "What's one pet peeve you have that no one knows about?",
-        24: "If you could build a house made out of untraditional materials, what would you make it from (ex: marshmellow, vegetables, plastic bags)?"
+        24: "If you could build a house made out of untraditional materials, what would you make it from (ex: marshmellow, vegetables, plastic bags)?",
         25: "What commercial song always get stuck in your head?",
     }
 
