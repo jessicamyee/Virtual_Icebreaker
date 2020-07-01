@@ -10,3 +10,8 @@ class Entry (models.Model):
     def __str__(self):
         """Return a string representation of the model."""
         return str(self.question_number) + " " + self.question_text
+    
+    @staticmethod
+    def total_count():
+        """Returns the total number of entries available."""
+        return Entry.objects.all().count()

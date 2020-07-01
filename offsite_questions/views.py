@@ -26,5 +26,5 @@ def index(request):
  
 ##Add some code where the first letter of the first word in the hotspring question is capitalized --- will also be its own unit test
 ##Ensuring submission integers are between 1-25 
-##Ensuring that we cannot 
+##Ensuring that we cannot add a question number when the number has been added
 ##Will need to write another function in index.html where if a user submits a new hotsprings question, the min and max will increase by increment of 1 and the HTML hard-coding will not be static --- will unit test
