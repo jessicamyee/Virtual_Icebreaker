@@ -1,19 +1,18 @@
+
 <p>
-  <h1>Q2 Offsite: Hotsprings Questions!</h1>
+  <h1>Hotsprings Questions!</h1>
 </p>
 
 <br>
 
-<p><b>Directions:</b> Think of a number between 1-25. Enter your number below for your hotsprings question. </p>
 
-<p><i>When Jess says times up, we'll go around and share our assigned question and answer. :)</i></p>
+<p><b>Directions:</b> Click the button below to view your hotsprings question. </p>
 
 <br>
 
 <form method="POST" action="{% url 'offsite_questions:index' %}">
   {% csrf_token %}
-  <input type="number" id="question_number" name="question_number" min="1" max="25">
-  <button name="submit">Submit Number</button>
+  <button name="submit">View my Question!</button>
 </form>
 
 <br>
