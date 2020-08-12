@@ -2,16 +2,16 @@
 
 The primary purpose of this icebreaker generator (also known as the Hotsprings App) is to randomly generate questions teams can use as part of their icebreaker activity upon a click of a button.
 
-# Motivation
+## Motivation
 
 2 big motivators: 
 1. As many companies have switched to remote work due to COVID-19, team-specific and general meetings can be another source of "Zoom fatigue". Why not make these meetings more fun with an individualized and customized icebreaker question generator? Each person in the meeting would just enter the website and receive their own random icebreaker question to think about. 
 2. Icebreaker activities can be stressful - especially for introverts. The reason this is called the Hotsprings App is to encourage team members (both introverts and extroverts) to ease into the conversation rather than forcefully "breaking the ice".
 
 
-# Features
--Public access to the standard 25 questions.
--If desired, you can create a team on the website, modify the standard list of questions (removing and/or adding new questions) and the list of questions will only be viewable to those in your team. (feature still in progress)
+## Features
+1. Public access to the standard 25 questions.
+2. If desired, you can create a team on the website, modify the standard list of questions (removing and/or adding new questions) and the list of questions will only be viewable to those in your team. (feature still in progress)
 
 
 ## Installation
