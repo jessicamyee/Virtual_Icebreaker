@@ -1,0 +1,9 @@
+
+    <form method= "post" action= "{% url 'app_users:register' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button name = "submit">register</button>
+        <input type = "hidden" name = "next" value = "{% url 'offsite_questions:index' %}" />
+    </form>
+
+

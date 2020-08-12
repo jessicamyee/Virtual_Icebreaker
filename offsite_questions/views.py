@@ -1,4 +1,11 @@
+from __future__ import unicode_literals
+
 from django.shortcuts import render
+from django.http import HttpResponseRedirect, Http404
+from django.urls import reverse
+from django.contrib.auth.decorators import login_required
+
+
 from offsite_questions.models import Entry
 import random
 
@@ -16,5 +23,11 @@ def index(request):
         data = request.POST
         context = {'question': Entry.random_question()} 
 
-    return render(request, 'q2_hotsprings_temps/index.html', context)
+    return render(request, 'offsite_questions/index.html', context)
 
+@login_required
+def topics(request):
+    """Show all topics."""
+    topics = Topic.objects.filter(owner=request.user).order_by('date_added')
+    context = {'topics': topics}
+    return render(request, 'app_logs/topics.html', context)

@@ -1,5 +1,16 @@
 
 <p>
+  {% if user.is_authenticated %}
+    Hello, {{ user.username }}.
+   {% else %} 
+   <a href="{% url 'app_users:register' %}">register</a>
+   <a href="{% url 'app_users:login' %}">log in</a>
+  {% endif %} 
+</p>
+
+
+
+<p>
   <h1>Hotsprings Questions!</h1>
 </p>
 

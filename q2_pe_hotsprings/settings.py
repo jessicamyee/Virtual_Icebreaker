@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'offsite_questions',
     'import_export',
+    'app_users',
 ]
 
 MIDDLEWARE = [
