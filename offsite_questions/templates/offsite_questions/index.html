@@ -1,24 +1,31 @@
+{% load static %}
 
 <p>
   {% if user.is_authenticated %}
     Hello, {{ user.username }}.
     <a href="{% url 'app_users:logout' %}"><b>Log Out</b></a>
    {% else %} 
-   <a href="{% url 'app_users:register' %}">register</a>
-   <a href="{% url 'app_users:login' %}">log in</a>
+   <a href="{% url 'app_users:register' %}">Register</a>
+   <a href="{% url 'app_users:login' %}">Log In</a>
   {% endif %} 
 </p>
 
 
+<p>
+  <center><h1>Hotsprings Questions!</h1></center>
+</p>
 
 <p>
-  <h1>Hotsprings Questions!</h1>
+  <center><img src="{% static 'offsite_questions/images/icecubes_in_hotsprings.png' %}" alt="Ice cubes hangingout at the hotsprings" width="500" height="500"/></center>
 </p>
+
+
+
 
 <br>
 
 
-<p><b>Directions:</b> Click the button below to view your hotsprings question. </p>
+<p><h3><b>Directions:</b> Click the button below to view your hotsprings question.</h3></p>
 
 <br>
 
