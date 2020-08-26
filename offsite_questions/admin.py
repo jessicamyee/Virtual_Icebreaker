@@ -1,8 +1,8 @@
 from django.contrib import admin
-from .models import Entry
+from .models import Entry, Team
 from import_export import resources
 from import_export.admin import ImportExportModelAdmin
-from offsite_questions.models import Entry
+from offsite_questions.models import Entry, Team
 
 
 
@@ -18,4 +18,10 @@ class EntryResource(resources.ModelResource):
 class EntryAdmin(ImportExportModelAdmin):
     resource_class = EntryResource
 
-admin.site.register(Entry, EntryAdmin)            
+admin.site.register(Entry, EntryAdmin)   
+
+
+class Team(resources.ModelResource):
+    class Meta:
+        model = Team
+    
