@@ -12,10 +12,10 @@ jdcal==1.4.1
 MarkupPy==1.14
 odfpy==1.4.1
 openpyxl==3.0.4
+psycopg2>=2.6.1
 pycodestyle==2.6.0
 pytz==2020.1
 PyYAML==5.3.1
-psycopg2>=2.6.1
 sqlparse==0.3.1
 static3==0.7.0
 tablib==2.0.0
