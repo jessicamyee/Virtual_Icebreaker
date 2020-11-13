@@ -6,7 +6,7 @@ import random
 
 class Team (models.Model):
     """Lists team slug and names."""
-    team_key = models.CharField(max_length=200)
+    team_urlslug = models.CharField(max_length=200)
     team_name = models.CharField(max_length=200)
 
 
