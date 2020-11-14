@@ -12,9 +12,10 @@ class Team (models.Model):
 
 class Entry (models.Model):
     """Entry of a hotsprings question"""
-    question_number = models.IntegerField()
+    # question_number = models.IntegerField()
     question_text = models.CharField(max_length=200)
-    team = models.ForeignKey(Team, on_delete=models.CASCADE, blank=True, null=True)
+    preset_question = models.BooleanField(default=False)
+    # team = models.ForeignKey(Team, on_delete=models.CASCADE, blank=True, null=True)
 
     def __str__(self):
         """Return a string representation of the model."""
@@ -38,4 +39,11 @@ class Entry (models.Model):
         """Returns a random question."""
         return random.choice(Entry.question_list())
 
-
+    @staticmethod
+    def preset_question():
+        """Identifies whether a given question is a preset question."""
+        with open("list_of_questions.txt", "r") as a_file:
+            if question_text in a_file.read():
+                print("True")
+            else:
+                print("False")    

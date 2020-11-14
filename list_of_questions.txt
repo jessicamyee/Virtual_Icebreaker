@@ -1,88 +1,26 @@
-a = Entry(question_number = 1, question_text = "What is one quality you do not want a mini you (could be a child or pet (?)) to inherit from you?")
-a.save()
-
-
-a = Entry(question_number = 2, question_text = "What occupation would you excel in that is not your current OR previous job?")
-a.save()
-
-
-a = Entry(question_number = 3, question_text = "If you could determine your own work schedule and did not have to worry about needing to work more or less due to your schedule, what would it look like? (ex: only work 2 days a week, between 1am-3am)")
-a.save()
-
-
-a = Entry(question_number = 4, question_text = "What’s your favorite café drink and why?")
-a.save()
-
-
-
-
-
-
-a = Entry(question_number = 5, question_text = "If you were a candy, what candy would you be?")
-a.save()
-
-a = Entry(question_number = 6, question_text = "What is one thing you bought that you regret a lot?")
-a.save()
-
-a = Entry(question_number = 7, question_text = "If you had to pass down an item you own to many generations, what item would that be?")
-a.save()
-
-a = Entry(question_number = 8, question_text = "What’s your favorite useless superpower?")
-a.save()
-
-a = Entry(question_number = 9, question_text = "What was the first thing you bought with your own money?")
-a.save()
-
-a = Entry(question_number = 10, question_text = "If you built your own society, what is the first rule you’re going to put in place?")
-a.save()
-
-a = Entry(question_number = 11, question_text = "How would you describe your time in college in 3 words?")
-a.save()
-
-a = Entry(question_number = 12, question_text = "Would you rather never be able to express yourself accurately or always have to say the exact truth?")
-a.save()
-
-a = Entry(question_number = 13, question_text = "What is the funniest prank played on you or played by you?")
-a.save()
-
-a = Entry(question_number = 14, question_text = "What is your favorite lifehack?")
-a.save()
-
-a = Entry(question_number = 15, question_text = "Describe your personality using ice cream flavors.")
-a.save()
-
-a = Entry(question_number = 16, question_text = "If you could have a custom robot, what are the top 3 things that robot would do for you?")
-a.save()
-
-a = Entry(question_number = 17, question_text = "What’s a hobby you always wanted to learn, but never picked up? And what stopped you?")
-a.save()
-
-a = Entry(question_number = 18, question_text = "How did you meet your best friend?")
-a.save()
-
-a = Entry(question_number = 19, question_text = "What's the worst thing you did as a kid?")
-a.save()
-
-a = Entry(question_number = 20, question_text = "What has been your favorite project or task at your current or previous company?")
-a.save()
-
-a = Entry(question_number = 21, question_text = "If you could choose a  company that we share the office space with, which company would it be?")
-a.save()
-
-a = Entry(question_number = 22, question_text = "What's one thing you believed as a kid but is not real?")
-a.save()
-
-a = Entry(question_number = 23, question_text = "What's one pet peeve you have that no one knows about?")
-a.save()
-
-a = Entry(question_number = 24, question_text = "If you could build a house made out of untraditional materials, what would you make it from (ex: marshmellow, vegetables, plastic bags)?")
-a.save()
-
-a = Entry(question_number = 25, question_text = "What commercial song always get stuck in your head?")
-a.save()
-
-
-
-#         23: "",
-#         24: "",
-#         25: "",
+"What is one quality you do not want a mini you (could be a child or pet (?)) to inherit from you?"
+"What occupation would you excel in that is not your current OR previous job?"
+"If you could determine your own work schedule and did not have to worry about needing to work more or less due to your schedule, what would it look like? (ex: only work 2 days a week, between 1am-3am)"
+"What’s your favorite café drink and why?"
+"If you were a candy, what candy would you be?"
+"What is one thing you bought that you regret a lot?"
+"If you had to pass down an item you own to many generations, what item would that be?"
+"What’s your favorite useless superpower?"
+"What was the first thing you bought with your own money?"
+"If you built your own society, what is the first rule you’re going to put in place?"
+"How would you describe your time in college in 3 words?"
+"Would you rather never be able to express yourself accurately or always have to say the exact truth?"
+"What is the funniest prank played on you or played by you?"
+"What is your favorite lifehack?"
+"Describe your personality using ice cream flavors."
+"If you could have a custom robot, what are the top 3 things that robot would do for you?"
+"What’s a hobby you always wanted to learn, but never picked up? And what stopped you?"
+"How did you meet a close friend of yours?"
+"What's the worst thing you did as a kid?"
+"What has been your favorite project or task at your current or previous company?"
+"If you could choose a  company that we share the office space with, which company would it be?"
+"What's one thing you believed as a kid but is not real?"
+"What's one pet peeve you have that no one knows about?"
+"If you could build a house made out of untraditional materials, what would you make it from (ex: marshmellow, vegetables, plastic bags)?"
+"What commercial song always get stuck in your head?"
+"If you could design your own mobile app, what would that be?"
