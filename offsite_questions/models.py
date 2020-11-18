@@ -36,3 +36,9 @@ class Entry (models.Model):
     def random_question():
         """Returns a random question."""
         return random.choice(Entry.question_list())
+
+
+class Questions_Team (models.Model):
+    "Relationship table that links team ID with question ID"
+    team_id = models.ForeignKey(Team, on_delete=models.PROTECT)
+    question_id = models.ForeignKey(Entry, on_delete=models.PROTECT)
