@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from offsite_questions.models import Team
 
+
 # Create your models here.
 
 class User_Profile (models.Model):

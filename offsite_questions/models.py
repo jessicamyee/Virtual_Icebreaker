@@ -1,5 +1,6 @@
 from django.db import models
 import random
+from app_users.forms import Registration
 
 # Create your models here.
 

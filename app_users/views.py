@@ -3,8 +3,10 @@ from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from django.urls import reverse
 from django.contrib.auth import login, logout, authenticate
-# from django.contrib.auth.forms import UserCreationForm
-from app_users.forms import Registration
+from django.contrib.auth.forms import UserCreationForm
+from .forms import Registration
+from offsite_questions.models import Team
+from app_users.models import User_Profile
 
 # Create your views here.
 
@@ -26,11 +28,20 @@ def register(request):
 
         if form.is_valid():
             new_user = form.save()
+            
+            #Links team name to Teams table
+            team = Team(team_name=form.cleaned_data.get("team_name"))
+            team.save()
+
+            #Links team to the user
+            user_team = User_Profile(user=new_user, team=team)
+            user_team.save()
+
             # Log the user in and then redirect to home page.
             authenticated_user= authenticate(username=new_user.username, password=request.POST['password1'])
             login(request, authenticated_user)
             return HttpResponseRedirect(reverse('offsite_questions:index'))
 
     context = {'form': form}
-    return render(request, 'app_users/register.html', context)                   
+    return render(request, 'app_users/register.html', context)
     
