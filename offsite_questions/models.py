@@ -1,14 +1,17 @@
 from django.db import models
 import random
 from app_users.forms import Registration
+from django.utils.text import slugify
+ 
 
 # Create your models here.
 
 
 class Team (models.Model):
     """Lists team slug and names."""
-    team_urlslug = models.CharField(max_length=200)
+    #Column for team name
     team_name = models.CharField(max_length=200)
+    team_urlslug = models.CharField(max_length=200)
 
 
 class Entry (models.Model):

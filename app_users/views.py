@@ -3,10 +3,10 @@ from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from django.urls import reverse
 from django.contrib.auth import login, logout, authenticate
-from django.contrib.auth.forms import UserCreationForm
 from .forms import Registration
 from offsite_questions.models import Team
 from app_users.models import User_Profile
+from django.utils.text import slugify
 
 # Create your views here.
 
@@ -30,8 +30,10 @@ def register(request):
             new_user = form.save()
             
             #Links team name to Teams table
-            team = Team(team_name=form.cleaned_data.get("team_name"))
+            created_team= form.cleaned_data.get("team_name")
+            team = Team(team_name=created_team, team_urlslug=slugify(created_team))
             team.save()
+
 
             #Links team to the user
             user_team = User_Profile(user=new_user, team=team)
