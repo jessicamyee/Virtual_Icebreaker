@@ -1,14 +1,23 @@
+<p>
+    {% if user.is_authenticated %}
+      Hello, {{ user.username }}.
+      <a href="{% url 'app_users:logout' %}"><b>Log Out</b></a>
+     {% else %} 
+     <a href="{% url 'offsite_questions:index' %}">Home</a>
+     <a href="{% url 'app_users:register' %}">Register</a>
+    {% endif %} 
+  </p>
 
-    {% if form.errors %}
-        <p>Your username and password didn't match. Please try again.</p>
-    {% endif %}
-    
-    <form method="post" action="{% url 'app_users:login' %}">
-        {% csrf_token %}
-        {{ form.as_p }}
+{% if form.errors %}
+    <p>Your username and password didn't match. Please try again.</p>
+{% endif %}
 
-        <button name ="submit">log in</button> 
-        <input type="hidden" name = "next"
-            value="{% url 'offsite_questions:index' %}" />
-    </form>
+<form method="post" action="{% url 'app_users:login' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <button name ="submit">log in</button> 
+    <input type="hidden" name = "next"
+        value="{% url 'offsite_questions:index' %}" />
+</form>
 

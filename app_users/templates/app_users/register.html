@@ -1,9 +1,28 @@
+<p>
+    {% if user.is_authenticated %}
+      Hello, {{ user.username }}.
+      <a href="{% url 'app_users:logout' %}"><b>Log Out</b></a>
+     {% else %} 
+     <a href="{% url 'offsite_questions:index' %}">Home</a>
+     <a href="{% url 'app_users:login' %}">Log In</a>
+    {% endif %} 
+  </p>
 
-    <form method= "post" action= "{% url 'app_users:register' %}">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button name = "submit">register</button>
-        <input type = "hidden" name = "next" value = "{% url 'offsite_questions:index' %}" />
-    </form>
+<br>
 
 
+<form method= "post" action= "{% url 'app_users:register' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button name = "submit">register</button>
+    <input type = "hidden" name = "next" value = "{% url 'offsite_questions:index' %}" />
+</form>
+
+
+   
+
+
+<br>
+
+
+<p><b>If your team has already been created, check with your team creator for your team-specific registration link!</b></p>
