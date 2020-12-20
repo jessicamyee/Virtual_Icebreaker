@@ -24,11 +24,20 @@ sudo apt-get install python3.6
 ```
 
 ```bash
-sudo python3 get-pip.py
+sudo apt-get install python3-pip
 ```
 
 ```bash
 sudo pip install Django==2.2.12
+```
+
+PSYCOPG requires the following dependencies
+```bash
+sudo apt-get install libpq-dev
+```
+
+```bash
+pip3 install -r requirement.txt
 ```
 
 ## Database
